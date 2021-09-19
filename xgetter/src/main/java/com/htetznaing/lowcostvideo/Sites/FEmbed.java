@@ -27,7 +27,7 @@ public class FEmbed {
     public static void fetch(String url, final LowCostVideo.OnTaskCompleted onComplete){
         String id = get_fEmbed_video_ID(url);
         if (id!=null){
-            AndroidNetworking.post("https://www.fembed.com/api/source/"+id)
+            AndroidNetworking.post("https://www.dutrag.com/api/source/"+id)
                     .build()
                     .getAsString(new StringRequestListener() {
                         @Override
